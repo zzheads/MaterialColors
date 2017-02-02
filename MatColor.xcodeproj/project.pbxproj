@@ -40,6 +40,11 @@
 		A66BF41C1E43BF11004A4E9E /* ss_02.png in Resources */ = {isa = PBXBuildFile; fileRef = A66BF4181E43BF11004A4E9E /* ss_02.png */; };
 		A66BF41D1E43BF11004A4E9E /* ss_03.png in Resources */ = {isa = PBXBuildFile; fileRef = A66BF4191E43BF11004A4E9E /* ss_03.png */; };
 		A66BF41E1E43BF11004A4E9E /* ss_04.png in Resources */ = {isa = PBXBuildFile; fileRef = A66BF41A1E43BF11004A4E9E /* ss_04.png */; };
+		A66BF4241E43C7C1004A4E9E /* icon_1024.png in Resources */ = {isa = PBXBuildFile; fileRef = A66BF41F1E43C7C1004A4E9E /* icon_1024.png */; };
+		A66BF4251E43C7C1004A4E9E /* ss_ipad_01.png in Resources */ = {isa = PBXBuildFile; fileRef = A66BF4201E43C7C1004A4E9E /* ss_ipad_01.png */; };
+		A66BF4261E43C7C1004A4E9E /* ss_ipad_02.png in Resources */ = {isa = PBXBuildFile; fileRef = A66BF4211E43C7C1004A4E9E /* ss_ipad_02.png */; };
+		A66BF4271E43C7C1004A4E9E /* ss_ipad_03.png in Resources */ = {isa = PBXBuildFile; fileRef = A66BF4221E43C7C1004A4E9E /* ss_ipad_03.png */; };
+		A66BF4281E43C7C1004A4E9E /* ss_ipad_04.png in Resources */ = {isa = PBXBuildFile; fileRef = A66BF4231E43C7C1004A4E9E /* ss_ipad_04.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -80,6 +85,11 @@
 		A66BF4181E43BF11004A4E9E /* ss_02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ss_02.png; path = MaterialColor/Resources/ss_02.png; sourceTree = "<group>"; };
 		A66BF4191E43BF11004A4E9E /* ss_03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ss_03.png; path = MaterialColor/Resources/ss_03.png; sourceTree = "<group>"; };
 		A66BF41A1E43BF11004A4E9E /* ss_04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ss_04.png; path = MaterialColor/Resources/ss_04.png; sourceTree = "<group>"; };
+		A66BF41F1E43C7C1004A4E9E /* icon_1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_1024.png; path = MaterialColor/Resources/icon_1024.png; sourceTree = "<group>"; };
+		A66BF4201E43C7C1004A4E9E /* ss_ipad_01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ss_ipad_01.png; path = MaterialColor/Resources/ss_ipad_01.png; sourceTree = "<group>"; };
+		A66BF4211E43C7C1004A4E9E /* ss_ipad_02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ss_ipad_02.png; path = MaterialColor/Resources/ss_ipad_02.png; sourceTree = "<group>"; };
+		A66BF4221E43C7C1004A4E9E /* ss_ipad_03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ss_ipad_03.png; path = MaterialColor/Resources/ss_ipad_03.png; sourceTree = "<group>"; };
+		A66BF4231E43C7C1004A4E9E /* ss_ipad_04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ss_ipad_04.png; path = MaterialColor/Resources/ss_ipad_04.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +141,11 @@
 		A66BF3E61E43AEE2004A4E9E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				A66BF41F1E43C7C1004A4E9E /* icon_1024.png */,
+				A66BF4201E43C7C1004A4E9E /* ss_ipad_01.png */,
+				A66BF4211E43C7C1004A4E9E /* ss_ipad_02.png */,
+				A66BF4221E43C7C1004A4E9E /* ss_ipad_03.png */,
+				A66BF4231E43C7C1004A4E9E /* ss_ipad_04.png */,
 				A66BF4171E43BF11004A4E9E /* ss_01.png */,
 				A66BF4181E43BF11004A4E9E /* ss_02.png */,
 				A66BF4191E43BF11004A4E9E /* ss_03.png */,
@@ -222,10 +237,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				A66BF4011E43B56A004A4E9E /* icon_40.png in Resources */,
+				A66BF4281E43C7C1004A4E9E /* ss_ipad_04.png in Resources */,
 				A66BF3F61E43AEFA004A4E9E /* SanFranciscoDisplay-Semibold.otf in Resources */,
 				A66BF3D91E4333C5004A4E9E /* LaunchScreen.storyboard in Resources */,
 				A66BF3D61E4333C5004A4E9E /* Assets.xcassets in Resources */,
 				A66BF3F01E43AEFA004A4E9E /* SanFranciscoDisplay-Black.otf in Resources */,
+				A66BF4261E43C7C1004A4E9E /* ss_ipad_02.png in Resources */,
 				A66BF3F41E43AEFA004A4E9E /* SanFranciscoDisplay-Medium.otf in Resources */,
 				A66BF3F71E43AEFA004A4E9E /* SanFranciscoDisplay-Thin.otf in Resources */,
 				A66BF4111E43B657004A4E9E /* icon_152.png in Resources */,
@@ -234,15 +251,18 @@
 				A66BF3F21E43AEFA004A4E9E /* SanFranciscoDisplay-Heavy.otf in Resources */,
 				A66BF4051E43B56A004A4E9E /* icon_87.png in Resources */,
 				A66BF41B1E43BF11004A4E9E /* ss_01.png in Resources */,
+				A66BF4241E43C7C1004A4E9E /* icon_1024.png in Resources */,
 				A66BF4061E43B56A004A4E9E /* icon_120.png in Resources */,
 				A66BF4101E43B657004A4E9E /* icon_76.png in Resources */,
 				A66BF3F51E43AEFA004A4E9E /* SanFranciscoDisplay-Regular.otf in Resources */,
 				A66BF41D1E43BF11004A4E9E /* ss_03.png in Resources */,
 				A66BF3F11E43AEFA004A4E9E /* SanFranciscoDisplay-Bold.otf in Resources */,
 				A66BF3F81E43AEFA004A4E9E /* SanFranciscoDisplay-Ultralight.otf in Resources */,
+				A66BF4271E43C7C1004A4E9E /* ss_ipad_03.png in Resources */,
 				A66BF3F31E43AEFA004A4E9E /* SanFranciscoDisplay-Light.otf in Resources */,
 				A66BF41C1E43BF11004A4E9E /* ss_02.png in Resources */,
 				A66BF4031E43B56A004A4E9E /* icon_60.png in Resources */,
+				A66BF4251E43C7C1004A4E9E /* ss_ipad_01.png in Resources */,
 				A66BF4081E43B56A004A4E9E /* icon.png in Resources */,
 				A66BF4071E43B56A004A4E9E /* icon_180.png in Resources */,
 				A66BF4121E43B657004A4E9E /* icon_167.png in Resources */,
@@ -390,7 +410,7 @@
 				INFOPLIST_FILE = MaterialColor/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.zzheads.MatColor;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zzheads.-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -404,7 +424,7 @@
 				INFOPLIST_FILE = MaterialColor/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.zzheads.MatColor;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zzheads.-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
