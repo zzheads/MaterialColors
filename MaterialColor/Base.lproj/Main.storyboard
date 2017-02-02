@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Table View Controller-->
+        <!--Materialize Colors-->
         <scene sceneID="PlJ-xw-vT1">
             <objects>
-                <tableViewController id="qQz-co-rmw" customClass="TableViewController" customModule="MaterialColor" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="Materialize Colors" id="qQz-co-rmw" customClass="TableViewController" customModule="MaterialColor" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="4I8-xi-XBr">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -31,6 +31,8 @@
                             <outlet property="delegate" destination="qQz-co-rmw" id="hHs-ah-yYz"/>
                         </connections>
                     </tableView>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="667"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Lm-LF-6zS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

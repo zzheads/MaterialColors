@@ -12,16 +12,11 @@ import UIKit
 
 class TableViewController: UITableViewController {
     let cellReuseIdentifier = "TableViewCell"
-    var materialColors: [Toneable]!
+    let materialColors = MaterialColor.allColors
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        materialColors.append(MaterialColor.red.allTones as! Toneable)
-        materialColors.append(MaterialColor.pink.allTones as! Toneable)
-        materialColors.append(MaterialColor.purple.allTones as! Toneable)
-        materialColors.append(MaterialColor.deepPurple.allTones as! Toneable)
-        materialColors.append(MaterialColor.indigo.allTones as! Toneable)        
         
         tableView.dataSource = self
         tableView.delegate = self
@@ -44,7 +39,15 @@ extension TableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellReuseIdentifier, for: indexPath)
-        cell.backgroundColor = 
+        let color = materialColors[indexPath.row]
+        cell.backgroundColor = color.color
+        cell.textLabel?.font = UIFont.boldSystemFont(ofSize: 15.0)
+        cell.textLabel?.text = "#\(color.hexValue)"
+        if (color.isLight) {
+            cell.textLabel?.textColor = .black
+        } else {
+            cell.textLabel?.textColor = .white
+        }
         return cell
     }
 }
