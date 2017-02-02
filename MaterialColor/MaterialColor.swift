@@ -9,22 +9,29 @@
 import Foundation
 import UIKit
 
-enum MaterialColor {
+let _white = "white"
+let _black = "black"
+let _red = "red"
+let _pink = "pink"
+let _purple = "purple"
+let _deepPurple = "deep purple"
+let _indigo = "indigo"
+let _blue = "blue"
+let _lightBlue = "light blue"
+let _cyan = "cyan"
+let _teal = "teal"
+let _green = "green"
+let _lightGreen = "light green"
+let _lime = "lime"
+let _yellow = "yellow"
+let _amber = "amber"
+let _orange = "orange"
+let _deepOrange = "deep orange"
+let _brown = "brown"
+let _grey = "grey"
+let _blueGrey = "blue grey"
 
-    enum ToneShort: String {
-        case _50 = "50"
-        case _100 = "100"
-        case _200 = "200"
-        case _300 = "300"
-        case _400 = "400"
-        case _500 = "500"
-        case _600 = "600"
-        case _700 = "700"
-        case _800 = "800"
-        case _900 = "900"
-        
-        static let allTones: [ToneShort] = [._50, ._100, ._200, ._300, ._400, ._500, ._600, ._700, ._800, ._900]
-    }
+enum MaterialColor {
 
     enum Tone: String {
         case _50 = "50"
@@ -43,6 +50,7 @@ enum MaterialColor {
         case A700 = "A700"
         
         static let allTones: [Tone] = [._50, ._100, ._200, ._300, ._400, ._500, ._600, ._700, ._800, ._900, .A100, .A200, .A400, .A700]
+        static let allTonesShort: [Tone] = [._50, ._100, ._200, ._300, ._400, ._500, ._600, ._700, ._800, ._900]
     }
     
     case white
@@ -63,155 +71,102 @@ enum MaterialColor {
     case amber(tone: Tone)
     case orange(tone: Tone)
     case deepOrange(tone: Tone)
-    case brown(tone: ToneShort)
-    case grey(tone: ToneShort)
-    case blueGrey(tone: ToneShort)
+    case brown(tone: Tone)
+    case grey(tone: Tone)
+    case blueGrey(tone: Tone)
+    
+    static let rawValues = [_white, _black, _red, _pink, _purple, _deepPurple, _indigo, _blue, _lightBlue, _cyan, _teal, _green, _lightGreen, _lime, _yellow, _amber, _orange, _deepOrange, _brown, _grey, _blueGrey]
+    
+    init?(rawValue: String, tone: Tone = ._50) {
+        switch rawValue {
+        case _white: self = .white
+        case _black: self = .black
+        case _red: self = .red(tone: tone)
+        case _pink: self = .pink(tone: tone)
+        case _purple: self = .purple(tone: tone)
+        case _deepPurple: self = .deepPurple(tone: tone)
+        case _indigo: self = .indigo(tone: tone)
+        case _blue: self = .blue(tone: tone)
+        case _lightBlue: self = .lightBlue(tone: tone)
+        case _cyan: self = .cyan(tone: tone)
+        case _teal: self = .teal(tone: tone)
+        case _green: self = .green(tone: tone)
+        case _lightGreen: self = .lightGreen(tone: tone)
+        case _lime: self = .lime(tone: tone)
+        case _yellow: self = .yellow(tone: tone)
+        case _amber: self = .amber(tone: tone)
+        case _orange: self = .orange(tone: tone)
+        case _deepOrange: self = .deepOrange(tone: tone)
+        case _brown: self = .brown(tone: tone)
+        case _grey: self = .grey(tone: tone)
+        case _blueGrey: self = .blueGrey(tone: tone)
+        default: return nil
+        }
+    }
+
+    var rawValue: String {
+        switch self {
+        case .white: return _white
+        case .black: return _black
+        case .red: return _red
+        case .pink: return _pink
+        case .purple: return _purple
+        case .deepPurple: return _deepPurple
+        case .indigo: return _indigo
+        case .blue: return _blue
+        case .lightBlue: return _lightBlue
+        case .cyan: return _cyan
+        case .teal: return _teal
+        case .green: return _green
+        case .lightGreen: return _lightGreen
+        case .lime: return _lime
+        case .yellow: return _yellow
+        case .amber: return _amber
+        case .orange: return _orange
+        case .deepOrange: return _deepOrange
+        case .brown: return _brown
+        case .grey: return _grey
+        case .blueGrey: return _blueGrey
+        }
+    }
+    
+    var tone: Tone? {
+        switch self {
+        case .black, .white: return nil
+        case .red(let tone), .pink(let tone), .purple(let tone), .deepPurple(let tone), .indigo(let tone), .blue(let tone), .lightBlue(let tone), .cyan(let tone), .teal(let tone), .green(let tone), .lightGreen(let tone), .lime(let tone), .yellow(let tone), .amber(let tone), .orange(let tone), .deepOrange(let tone), .brown(let tone), .grey(let tone), .blueGrey(let tone): return tone
+        }
+    }
+    
+    var allTones: [Tone] {
+        switch self {
+        case .black, .white: return [Tone._50]
+        case .brown, .grey, .blueGrey: return Tone.allTonesShort
+        default: return Tone.allTones
+        }
+    }
     
     var colorName: String {
-        switch self {
-        case .white: return "white"
-        case .black: return "black"
-        case .red(_): return "red"
-        case .pink(_): return "pink"
-        case .purple(_): return "purple"
-        case .deepPurple(_): return "deep purple"
-        case .indigo(_): return "indigo"
-        case .blue(_): return "blue"
-        case .lightBlue(_): return "light blue"
-        case .cyan(_): return "cyan"
-        case .teal(_): return "teal"
-        case .green(_): return "green"
-        case .lightGreen(_): return "light green"
-        case .lime(_): return "lime"
-        case .yellow(_): return "yellow"
-        case .amber(_): return "amber"
-        case .orange(_): return "orange"
-        case .deepOrange(_): return "deep orange"
-        case .brown(_): return "brown"
-        case .grey(_): return "grey"
-        case .blueGrey(_): return "blue grey"
+        guard let tone = self.tone else {
+            return self.rawValue.capitalized
         }
+        return "\(self.rawValue.capitalized)(\(tone.rawValue))"
     }
     
-    var colorNameWithTone: String {
-        switch self {
-        case .black, .white: return self.colorName
-        case .red(let tone), .pink(let tone), .purple(let tone), .deepPurple(let tone), .indigo(let tone), .blue(let tone), .lightBlue(let tone), .cyan(let tone), .teal(let tone), .green(let tone), .lightGreen(let tone), .lime(let tone), .yellow(let tone), .amber(let tone), .orange(let tone), .deepOrange(let tone): return "\(self.colorName)(\(tone.rawValue))"
-        case .brown(let tone), .grey(let tone), .blueGrey(let tone): return "\(self.colorName)(\(tone.rawValue))"
-        }
-    }
-    
-    var allColorTones: [MaterialColor] {
+    static var allColors: [MaterialColor] {
         var result = [MaterialColor]()
-        switch self {
-        case .black:
-            result.append(.black)
-        case .white:
-            result.append(.white)
-        case .red(tone: _):
-            for tone in Tone.allTones {
-                result.append(.red(tone: tone))
-            }
-        case .pink(tone: _):
-            for tone in Tone.allTones {
-                result.append(.pink(tone: tone))
-            }
-        case .purple(tone: _):
-            for tone in Tone.allTones {
-                result.append(.purple(tone: tone))
-            }
-        case .deepPurple(tone: _):
-            for tone in Tone.allTones {
-                result.append(.deepPurple(tone: tone))
-            }
-        case .indigo(tone: _):
-            for tone in Tone.allTones {
-                result.append(.indigo(tone: tone))
-            }
-        case .blue(tone: _):
-            for tone in Tone.allTones {
-                result.append(.blue(tone: tone))
-            }
-        case .lightBlue(tone: _):
-            for tone in Tone.allTones {
-                result.append(.lightBlue(tone: tone))
-            }
-        case .cyan(tone: _):
-            for tone in Tone.allTones {
-                result.append(.cyan(tone: tone))
-            }
-        case .teal(tone: _):
-            for tone in Tone.allTones {
-                result.append(.teal(tone: tone))
-            }
-        case .green(tone: _):
-            for tone in Tone.allTones {
-                result.append(.green(tone: tone))
-            }
-        case .lightGreen(tone: _):
-            for tone in Tone.allTones {
-                result.append(.lightGreen(tone: tone))
-            }
-        case .lime(tone: _):
-            for tone in Tone.allTones {
-                result.append(.lime(tone: tone))
-            }
-        case .yellow(tone: _):
-            for tone in Tone.allTones {
-                result.append(.yellow(tone: tone))
-            }
-        case .amber(tone: _):
-            for tone in Tone.allTones {
-                result.append(.amber(tone: tone))
-            }
-        case .orange(tone: _):
-            for tone in Tone.allTones {
-                result.append(.orange(tone: tone))
-            }
-        case .deepOrange(tone: _):
-            for tone in Tone.allTones {
-                result.append(.deepOrange(tone: tone))
-            }
-        case .brown(tone: _):
-            for tone in ToneShort.allTones {
-                result.append(.brown(tone: tone))
-            }
-        case .grey(tone: _):
-            for tone in ToneShort.allTones {
-                result.append(.grey(tone: tone))
-            }
-        case .blueGrey(tone: _):
-            for tone in ToneShort.allTones {
-                result.append(.blueGrey(tone: tone))
+        for rawValue in rawValues {
+            for tone in (MaterialColor(rawValue: rawValue)?.allTones)! {
+                result.append(MaterialColor(rawValue: rawValue, tone: tone)!)
             }
         }
         return result
     }
     
-    static var allColors: [MaterialColor] {
+    static func allTones(of rawValue: String) -> [MaterialColor] {
         var result = [MaterialColor]()
-        result.append(MaterialColor.white)
-        result.append(MaterialColor.black)
-        result.append(contentsOf: MaterialColor.red(tone: ._50).allColorTones)
-        result.append(contentsOf: MaterialColor.pink(tone: ._50).allColorTones)
-        result.append(contentsOf: MaterialColor.purple(tone: ._50).allColorTones)
-        result.append(contentsOf: MaterialColor.deepPurple(tone: ._50).allColorTones)
-        result.append(contentsOf: MaterialColor.indigo(tone: ._50).allColorTones)
-        result.append(contentsOf: MaterialColor.blue(tone: ._50).allColorTones)
-        result.append(contentsOf: MaterialColor.lightBlue(tone: ._50).allColorTones)
-        result.append(contentsOf: MaterialColor.cyan(tone: ._50).allColorTones)
-        result.append(contentsOf: MaterialColor.teal(tone: ._50).allColorTones)
-        result.append(contentsOf: MaterialColor.green(tone: ._50).allColorTones)
-        result.append(contentsOf: MaterialColor.lightGreen(tone: ._50).allColorTones)
-        result.append(contentsOf: MaterialColor.lime(tone: ._50).allColorTones)
-        result.append(contentsOf: MaterialColor.yellow(tone: ._50).allColorTones)
-        result.append(contentsOf: MaterialColor.amber(tone: ._50).allColorTones)
-        result.append(contentsOf: MaterialColor.orange(tone: ._50).allColorTones)
-        result.append(contentsOf: MaterialColor.deepOrange(tone: ._50).allColorTones)
-        result.append(contentsOf: MaterialColor.brown(tone: ._50).allColorTones)
-        result.append(contentsOf: MaterialColor.grey(tone: ._50).allColorTones)
-        result.append(contentsOf: MaterialColor.blueGrey(tone: ._50).allColorTones)
-        
+        for tone in (MaterialColor(rawValue: rawValue)?.allTones)! {
+            result.append(MaterialColor(rawValue: rawValue, tone: tone)!)
+        }
         return result
     }
     
@@ -228,92 +183,77 @@ enum MaterialColor {
         case .black: return false
         case .white: return true
         case .red(let tone):
-            if (tone == ._50 || tone == ._100 || tone == ._200 || tone == ._300 || tone == .A100) {
-                return true
+            switch tone {
+            case ._50, ._100, ._200, ._300, .A100: return true
+            default: return false
             }
-            return false
-        case .pink(let tone):
-            if (tone == ._50 || tone == ._100 || tone == ._200 || tone == .A100) {
-                return true
+        case .pink(let tone), .purple(let tone), .deepPurple(let tone), .indigo(let tone):
+            switch tone {
+            case ._50, ._100, ._200, .A100: return true
+            default: return false
             }
-            return false
-        case .purple(let tone):
-            if (tone == ._50 || tone == ._100 || tone == ._200 || tone == .A100) {
-                return true
-            }
-            return false
-        case .deepPurple(let tone):
-            if (tone == ._50 || tone == ._100 || tone == ._200 || tone == .A100) {
-                return true
-            }
-            return false
-        case .indigo(let tone):
-            if (tone == ._50 || tone == ._100 || tone == ._200 || tone == .A100) {
-                return true
-            }
-            return false
         case .blue(let tone):
-            if (tone == ._50 || tone == ._100 || tone == ._200 || tone == ._300 || tone == ._400 || tone == .A100) {
-                return true
+            switch tone {
+            case ._50, ._100, ._200, ._300, ._400, .A100: return true
+            default: return false
             }
-            return false
         case .lightBlue(let tone):
-            if (tone == ._50 || tone == ._100 || tone == ._200 || tone == ._300 || tone == ._400 || tone == ._500 || tone == .A100 || tone == .A200 || tone == .A400) {
-                return true
+            switch tone {
+            case ._50, ._100, ._200, ._300, ._400, ._500, .A100, .A200, .A400: return true
+            default: return false
             }
-            return false
         case .cyan(let tone):
-            if (tone == ._50 || tone == ._100 || tone == ._200 || tone == ._300 || tone == ._400 || tone == ._500 || tone == ._600 || tone == .A100 || tone == .A200 || tone == .A400 || tone == .A700) {
-                return true
+            switch tone {
+            case ._700, ._800, ._900: return false
+            default: return true
             }
-            return false
         case .teal(let tone):
-            if (tone == ._50 || tone == ._100 || tone == ._200 || tone == ._300 || tone == ._400 || tone == .A100 || tone == .A200 || tone == .A400 || tone == .A700) {
-                return true
+            switch tone {
+            case ._50, ._100, ._200, ._300, ._400, .A100, .A200, .A400, .A700: return true
+            default: return false
             }
-            return false
         case .green(let tone):
-            if (tone == ._50 || tone == ._100 || tone == ._200 || tone == ._300 || tone == ._400 || tone == ._500 || tone == .A100 || tone == .A200 || tone == .A400 || tone == .A700) {
-                return true
+            switch tone {
+            case ._50, ._100, ._200, ._300, ._400, ._500, .A100, .A200, .A400, .A700: return true
+            default: return false
             }
-            return false
         case .lightGreen(let tone):
-            if (tone == ._50 || tone == ._100 || tone == ._200 || tone == ._300 || tone == ._400 || tone == ._500 || tone == ._600 || tone == .A100 || tone == .A200 || tone == .A400 || tone == .A700) {
-                return true
+            switch tone {
+            case ._50, ._100, ._200, ._300, ._400, ._500, ._600, .A100, .A200, .A400, .A700: return true
+            default: return false
             }
-            return false
         case .lime(let tone):
-            if (tone == ._900) {
-                return false
+            switch tone {
+            case ._900: return false
+            default: return true
             }
-            return true
         case .yellow(_), .amber(_):
             return true
         case .orange(let tone):
-            if (tone == ._800 || tone == ._900) {
-                return false
+            switch tone {
+            case ._800, ._900: return false
+            default: return true
             }
-            return true
         case .deepOrange(let tone):
-            if (tone == ._50 || tone == ._100 || tone == ._200 || tone == ._300 || tone == ._400 || tone == .A100 || tone == .A200) {
-                return true
+            switch tone {
+            case ._50, ._100, ._200, ._300, ._400, .A100, .A200: return true
+            default: return false
             }
-            return false
         case .brown(let tone):
-            if (tone == ._50 || tone == ._100 || tone == ._200) {
-                return true
+            switch tone {
+            case ._50, ._100, ._200: return true
+            default: return false
             }
-            return false
         case .grey(let tone):
-            if (tone == ._600 || tone == ._700 || tone == ._800 || tone == ._900) {
-                return false
+            switch tone {
+            case ._600, ._700, ._800, ._900: return false
+            default: return true
             }
-            return true
         case .blueGrey(let tone):
-            if (tone == ._50 || tone == ._100 || tone == ._200 || tone == ._300) {
-                return true
+            switch tone {
+            case ._50, ._100, ._200, ._300: return true
+            default: return false
             }
-            return false
         }
     }
     
@@ -605,6 +545,7 @@ enum MaterialColor {
             case ._700: return 0x5D4037
             case ._800: return 0x4E342E
             case ._900: return 0x3E2723
+            case .A100, .A200, .A400, .A700: return 0x795548
             }
         case .grey(let tone):
             switch tone {
@@ -618,6 +559,7 @@ enum MaterialColor {
             case ._700: return 0x616161
             case ._800: return 0x424242
             case ._900: return 0x212121
+            case .A100, .A200, .A400, .A700: return 0x9E9E9E
             }
         case .blueGrey(let tone):
             switch tone {
@@ -631,6 +573,7 @@ enum MaterialColor {
             case ._700: return 0x455A64
             case ._800: return 0x37474F
             case ._900: return 0x263238
+            case .A100, .A200, .A400, .A700: return 0x607D8B
             }
         }
     }

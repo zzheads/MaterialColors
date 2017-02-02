@@ -14,6 +14,15 @@
 		A66BF3E11E4333FC004A4E9E /* MaterialColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66BF3E01E4333FC004A4E9E /* MaterialColor.swift */; };
 		A66BF3E31E43344A004A4E9E /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66BF3E21E43344A004A4E9E /* UIColor+.swift */; };
 		A66BF3E51E433EC3004A4E9E /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66BF3E41E433EC3004A4E9E /* TableViewController.swift */; };
+		A66BF3F01E43AEFA004A4E9E /* SanFranciscoDisplay-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = A66BF3E71E43AEFA004A4E9E /* SanFranciscoDisplay-Black.otf */; };
+		A66BF3F11E43AEFA004A4E9E /* SanFranciscoDisplay-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = A66BF3E81E43AEFA004A4E9E /* SanFranciscoDisplay-Bold.otf */; };
+		A66BF3F21E43AEFA004A4E9E /* SanFranciscoDisplay-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = A66BF3E91E43AEFA004A4E9E /* SanFranciscoDisplay-Heavy.otf */; };
+		A66BF3F31E43AEFA004A4E9E /* SanFranciscoDisplay-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = A66BF3EA1E43AEFA004A4E9E /* SanFranciscoDisplay-Light.otf */; };
+		A66BF3F41E43AEFA004A4E9E /* SanFranciscoDisplay-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = A66BF3EB1E43AEFA004A4E9E /* SanFranciscoDisplay-Medium.otf */; };
+		A66BF3F51E43AEFA004A4E9E /* SanFranciscoDisplay-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = A66BF3EC1E43AEFA004A4E9E /* SanFranciscoDisplay-Regular.otf */; };
+		A66BF3F61E43AEFA004A4E9E /* SanFranciscoDisplay-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = A66BF3ED1E43AEFA004A4E9E /* SanFranciscoDisplay-Semibold.otf */; };
+		A66BF3F71E43AEFA004A4E9E /* SanFranciscoDisplay-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = A66BF3EE1E43AEFA004A4E9E /* SanFranciscoDisplay-Thin.otf */; };
+		A66BF3F81E43AEFA004A4E9E /* SanFranciscoDisplay-Ultralight.otf in Resources */ = {isa = PBXBuildFile; fileRef = A66BF3EF1E43AEFA004A4E9E /* SanFranciscoDisplay-Ultralight.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +35,15 @@
 		A66BF3E01E4333FC004A4E9E /* MaterialColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialColor.swift; sourceTree = "<group>"; };
 		A66BF3E21E43344A004A4E9E /* UIColor+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
 		A66BF3E41E433EC3004A4E9E /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		A66BF3E71E43AEFA004A4E9E /* SanFranciscoDisplay-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SanFranciscoDisplay-Black.otf"; path = "MaterialColor/Resources/SanFranciscoDisplay-Black.otf"; sourceTree = "<group>"; };
+		A66BF3E81E43AEFA004A4E9E /* SanFranciscoDisplay-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SanFranciscoDisplay-Bold.otf"; path = "MaterialColor/Resources/SanFranciscoDisplay-Bold.otf"; sourceTree = "<group>"; };
+		A66BF3E91E43AEFA004A4E9E /* SanFranciscoDisplay-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SanFranciscoDisplay-Heavy.otf"; path = "MaterialColor/Resources/SanFranciscoDisplay-Heavy.otf"; sourceTree = "<group>"; };
+		A66BF3EA1E43AEFA004A4E9E /* SanFranciscoDisplay-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SanFranciscoDisplay-Light.otf"; path = "MaterialColor/Resources/SanFranciscoDisplay-Light.otf"; sourceTree = "<group>"; };
+		A66BF3EB1E43AEFA004A4E9E /* SanFranciscoDisplay-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SanFranciscoDisplay-Medium.otf"; path = "MaterialColor/Resources/SanFranciscoDisplay-Medium.otf"; sourceTree = "<group>"; };
+		A66BF3EC1E43AEFA004A4E9E /* SanFranciscoDisplay-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SanFranciscoDisplay-Regular.otf"; path = "MaterialColor/Resources/SanFranciscoDisplay-Regular.otf"; sourceTree = "<group>"; };
+		A66BF3ED1E43AEFA004A4E9E /* SanFranciscoDisplay-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SanFranciscoDisplay-Semibold.otf"; path = "MaterialColor/Resources/SanFranciscoDisplay-Semibold.otf"; sourceTree = "<group>"; };
+		A66BF3EE1E43AEFA004A4E9E /* SanFranciscoDisplay-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SanFranciscoDisplay-Thin.otf"; path = "MaterialColor/Resources/SanFranciscoDisplay-Thin.otf"; sourceTree = "<group>"; };
+		A66BF3EF1E43AEFA004A4E9E /* SanFranciscoDisplay-Ultralight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SanFranciscoDisplay-Ultralight.otf"; path = "MaterialColor/Resources/SanFranciscoDisplay-Ultralight.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +62,7 @@
 			children = (
 				A66BF3CD1E4333C5004A4E9E /* MaterialColor */,
 				A66BF3CC1E4333C5004A4E9E /* Products */,
+				A66BF3E61E43AEE2004A4E9E /* Resources */,
 			);
 			sourceTree = "<group>";
 		};
@@ -68,6 +87,22 @@
 				A66BF3E41E433EC3004A4E9E /* TableViewController.swift */,
 			);
 			path = MaterialColor;
+			sourceTree = "<group>";
+		};
+		A66BF3E61E43AEE2004A4E9E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A66BF3E71E43AEFA004A4E9E /* SanFranciscoDisplay-Black.otf */,
+				A66BF3E81E43AEFA004A4E9E /* SanFranciscoDisplay-Bold.otf */,
+				A66BF3E91E43AEFA004A4E9E /* SanFranciscoDisplay-Heavy.otf */,
+				A66BF3EA1E43AEFA004A4E9E /* SanFranciscoDisplay-Light.otf */,
+				A66BF3EB1E43AEFA004A4E9E /* SanFranciscoDisplay-Medium.otf */,
+				A66BF3EC1E43AEFA004A4E9E /* SanFranciscoDisplay-Regular.otf */,
+				A66BF3ED1E43AEFA004A4E9E /* SanFranciscoDisplay-Semibold.otf */,
+				A66BF3EE1E43AEFA004A4E9E /* SanFranciscoDisplay-Thin.otf */,
+				A66BF3EF1E43AEFA004A4E9E /* SanFranciscoDisplay-Ultralight.otf */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,9 +165,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A66BF3F61E43AEFA004A4E9E /* SanFranciscoDisplay-Semibold.otf in Resources */,
 				A66BF3D91E4333C5004A4E9E /* LaunchScreen.storyboard in Resources */,
 				A66BF3D61E4333C5004A4E9E /* Assets.xcassets in Resources */,
+				A66BF3F01E43AEFA004A4E9E /* SanFranciscoDisplay-Black.otf in Resources */,
+				A66BF3F41E43AEFA004A4E9E /* SanFranciscoDisplay-Medium.otf in Resources */,
+				A66BF3F71E43AEFA004A4E9E /* SanFranciscoDisplay-Thin.otf in Resources */,
 				A66BF3D41E4333C5004A4E9E /* Main.storyboard in Resources */,
+				A66BF3F21E43AEFA004A4E9E /* SanFranciscoDisplay-Heavy.otf in Resources */,
+				A66BF3F51E43AEFA004A4E9E /* SanFranciscoDisplay-Regular.otf in Resources */,
+				A66BF3F11E43AEFA004A4E9E /* SanFranciscoDisplay-Bold.otf in Resources */,
+				A66BF3F81E43AEFA004A4E9E /* SanFranciscoDisplay-Ultralight.otf in Resources */,
+				A66BF3F31E43AEFA004A4E9E /* SanFranciscoDisplay-Light.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
