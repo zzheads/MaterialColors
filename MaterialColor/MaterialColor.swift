@@ -67,6 +67,40 @@ enum MaterialColor {
     case grey(tone: ToneShort)
     case blueGrey(tone: ToneShort)
     
+    var colorName: String {
+        switch self {
+        case .white: return "white"
+        case .black: return "black"
+        case .red(_): return "red"
+        case .pink(_): return "pink"
+        case .purple(_): return "purple"
+        case .deepPurple(_): return "deep purple"
+        case .indigo(_): return "indigo"
+        case .blue(_): return "blue"
+        case .lightBlue(_): return "light blue"
+        case .cyan(_): return "cyan"
+        case .teal(_): return "teal"
+        case .green(_): return "green"
+        case .lightGreen(_): return "light green"
+        case .lime(_): return "lime"
+        case .yellow(_): return "yellow"
+        case .amber(_): return "amber"
+        case .orange(_): return "orange"
+        case .deepOrange(_): return "deep orange"
+        case .brown(_): return "brown"
+        case .grey(_): return "grey"
+        case .blueGrey(_): return "blue grey"
+        }
+    }
+    
+    var colorNameWithTone: String {
+        switch self {
+        case .black, .white: return self.colorName
+        case .red(let tone), .pink(let tone), .purple(let tone), .deepPurple(let tone), .indigo(let tone), .blue(let tone), .lightBlue(let tone), .cyan(let tone), .teal(let tone), .green(let tone), .lightGreen(let tone), .lime(let tone), .yellow(let tone), .amber(let tone), .orange(let tone), .deepOrange(let tone): return "\(self.colorName)(\(tone.rawValue))"
+        case .brown(let tone), .grey(let tone), .blueGrey(let tone): return "\(self.colorName)(\(tone.rawValue))"
+        }
+    }
+    
     var allColorTones: [MaterialColor] {
         var result = [MaterialColor]()
         switch self {

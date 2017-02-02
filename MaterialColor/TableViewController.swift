@@ -29,6 +29,10 @@ class TableViewController: UITableViewController {
 }
 
 extension TableViewController {
+    fileprivate func object(at indexPath: IndexPath) -> MaterialColor {
+        return materialColors[indexPath.row]
+    }
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
@@ -39,10 +43,10 @@ extension TableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellReuseIdentifier, for: indexPath)
-        let color = materialColors[indexPath.row]
+        let color = object(at: indexPath)
         cell.backgroundColor = color.color
         cell.textLabel?.font = UIFont.boldSystemFont(ofSize: 15.0)
-        cell.textLabel?.text = "#\(color.hexValue)"
+        cell.textLabel?.text = "\(color.colorNameWithTone): #\(color.hexValue)"
         if (color.isLight) {
             cell.textLabel?.textColor = .black
         } else {
