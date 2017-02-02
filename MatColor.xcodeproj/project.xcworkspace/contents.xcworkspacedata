@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:MaterialColor.xcodeproj">
+      location = "self:/Users/zzheads/XCode/MaterialColor/MatColor.xcodeproj">
    </FileRef>
 </Workspace>

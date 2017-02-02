@@ -43,7 +43,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A66BF3CB1E4333C5004A4E9E /* MaterialColor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MaterialColor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A66BF3CB1E4333C5004A4E9E /* MatColor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MatColor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A66BF3CE1E4333C5004A4E9E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A66BF3D31E4333C5004A4E9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A66BF3D51E4333C5004A4E9E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -98,7 +98,7 @@
 			children = (
 				A66BF4161E43BDCF004A4E9E /* LICENSE */,
 				A66BF4151E43B7F6004A4E9E /* README.MD */,
-				A66BF3CD1E4333C5004A4E9E /* MaterialColor */,
+				A66BF3CD1E4333C5004A4E9E /* MatColor */,
 				A66BF3CC1E4333C5004A4E9E /* Products */,
 				A66BF3E61E43AEE2004A4E9E /* Resources */,
 			);
@@ -107,12 +107,12 @@
 		A66BF3CC1E4333C5004A4E9E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A66BF3CB1E4333C5004A4E9E /* MaterialColor.app */,
+				A66BF3CB1E4333C5004A4E9E /* MatColor.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A66BF3CD1E4333C5004A4E9E /* MaterialColor */ = {
+		A66BF3CD1E4333C5004A4E9E /* MatColor */ = {
 			isa = PBXGroup;
 			children = (
 				A66BF3CE1E4333C5004A4E9E /* AppDelegate.swift */,
@@ -124,6 +124,7 @@
 				A66BF3E21E43344A004A4E9E /* UIColor+.swift */,
 				A66BF3E41E433EC3004A4E9E /* TableViewController.swift */,
 			);
+			name = MatColor;
 			path = MaterialColor;
 			sourceTree = "<group>";
 		};
@@ -163,9 +164,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A66BF3CA1E4333C5004A4E9E /* MaterialColor */ = {
+		A66BF3CA1E4333C5004A4E9E /* MatColor */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A66BF3DD1E4333C5004A4E9E /* Build configuration list for PBXNativeTarget "MaterialColor" */;
+			buildConfigurationList = A66BF3DD1E4333C5004A4E9E /* Build configuration list for PBXNativeTarget "MatColor" */;
 			buildPhases = (
 				A66BF3C71E4333C5004A4E9E /* Sources */,
 				A66BF3C81E4333C5004A4E9E /* Frameworks */,
@@ -175,9 +176,9 @@
 			);
 			dependencies = (
 			);
-			name = MaterialColor;
+			name = MatColor;
 			productName = MaterialColor;
-			productReference = A66BF3CB1E4333C5004A4E9E /* MaterialColor.app */;
+			productReference = A66BF3CB1E4333C5004A4E9E /* MatColor.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -197,7 +198,7 @@
 					};
 				};
 			};
-			buildConfigurationList = A66BF3C61E4333C5004A4E9E /* Build configuration list for PBXProject "MaterialColor" */;
+			buildConfigurationList = A66BF3C61E4333C5004A4E9E /* Build configuration list for PBXProject "MatColor" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -210,7 +211,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A66BF3CA1E4333C5004A4E9E /* MaterialColor */,
+				A66BF3CA1E4333C5004A4E9E /* MatColor */,
 			);
 		};
 /* End PBXProject section */
@@ -389,7 +390,7 @@
 				INFOPLIST_FILE = MaterialColor/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.zzheads.MaterialColor;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zzheads.MatColor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -403,7 +404,7 @@
 				INFOPLIST_FILE = MaterialColor/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.zzheads.MaterialColor;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zzheads.MatColor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -412,7 +413,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A66BF3C61E4333C5004A4E9E /* Build configuration list for PBXProject "MaterialColor" */ = {
+		A66BF3C61E4333C5004A4E9E /* Build configuration list for PBXProject "MatColor" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A66BF3DB1E4333C5004A4E9E /* Debug */,
@@ -421,7 +422,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A66BF3DD1E4333C5004A4E9E /* Build configuration list for PBXNativeTarget "MaterialColor" */ = {
+		A66BF3DD1E4333C5004A4E9E /* Build configuration list for PBXNativeTarget "MatColor" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A66BF3DE1E4333C5004A4E9E /* Debug */,

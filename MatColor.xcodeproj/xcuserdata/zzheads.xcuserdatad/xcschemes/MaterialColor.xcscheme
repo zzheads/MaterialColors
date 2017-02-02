@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A66BF3CA1E4333C5004A4E9E"
-               BuildableName = "MaterialColor.app"
-               BlueprintName = "MaterialColor"
-               ReferencedContainer = "container:MaterialColor.xcodeproj">
+               BuildableName = "MatColor.app"
+               BlueprintName = "MatColor"
+               ReferencedContainer = "container:MatColor.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A66BF3CA1E4333C5004A4E9E"
-            BuildableName = "MaterialColor.app"
-            BlueprintName = "MaterialColor"
-            ReferencedContainer = "container:MaterialColor.xcodeproj">
+            BuildableName = "MatColor.app"
+            BlueprintName = "MatColor"
+            ReferencedContainer = "container:MatColor.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -56,9 +56,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A66BF3CA1E4333C5004A4E9E"
-            BuildableName = "MaterialColor.app"
-            BlueprintName = "MaterialColor"
-            ReferencedContainer = "container:MaterialColor.xcodeproj">
+            BuildableName = "MatColor.app"
+            BlueprintName = "MatColor"
+            ReferencedContainer = "container:MatColor.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -75,9 +75,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A66BF3CA1E4333C5004A4E9E"
-            BuildableName = "MaterialColor.app"
-            BlueprintName = "MaterialColor"
-            ReferencedContainer = "container:MaterialColor.xcodeproj">
+            BuildableName = "MatColor.app"
+            BlueprintName = "MatColor"
+            ReferencedContainer = "container:MatColor.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

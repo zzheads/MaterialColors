@@ -1,11 +1,11 @@
-#Material Color
+#MatColor
 
 
-Actually "MaterialColor" is a simple framework with defined in code "materialize colors" (for more info see: [material.io](https://material.io/guidelines/style/color.html#)).
+Actually "MatColor" is a simple framework with defined in code "materialize colors" (for more info see: [material.io](https://material.io/guidelines/style/color.html#)).
 Application is made just for demonstration purpose, where you can see all colors with descriptions.
 
 ###Quick Start
-For using "MaterialColor" all you need is add MaterialColor.swift source file into your project.
+For using "MatColor" all you need is add MaterialColor.swift source file into your project.
 
 ###Usage
 "MaterialColor" is enumeration with nested enumeration "Tone", for defining needed code just set
