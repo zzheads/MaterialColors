@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		A66BF3CF1E4333C5004A4E9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66BF3CE1E4333C5004A4E9E /* AppDelegate.swift */; };
-		A66BF3D11E4333C5004A4E9E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66BF3D01E4333C5004A4E9E /* ViewController.swift */; };
 		A66BF3D41E4333C5004A4E9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A66BF3D21E4333C5004A4E9E /* Main.storyboard */; };
 		A66BF3D61E4333C5004A4E9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A66BF3D51E4333C5004A4E9E /* Assets.xcassets */; };
 		A66BF3D91E4333C5004A4E9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A66BF3D71E4333C5004A4E9E /* LaunchScreen.storyboard */; };
+		A66BF3E11E4333FC004A4E9E /* MaterialColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66BF3E01E4333FC004A4E9E /* MaterialColor.swift */; };
+		A66BF3E31E43344A004A4E9E /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66BF3E21E43344A004A4E9E /* UIColor+.swift */; };
+		A66BF3E51E433EC3004A4E9E /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66BF3E41E433EC3004A4E9E /* TableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A66BF3CB1E4333C5004A4E9E /* MaterialColor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MaterialColor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A66BF3CE1E4333C5004A4E9E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A66BF3D01E4333C5004A4E9E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A66BF3D31E4333C5004A4E9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A66BF3D51E4333C5004A4E9E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A66BF3D81E4333C5004A4E9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A66BF3DA1E4333C5004A4E9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A66BF3E01E4333FC004A4E9E /* MaterialColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialColor.swift; sourceTree = "<group>"; };
+		A66BF3E21E43344A004A4E9E /* UIColor+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
+		A66BF3E41E433EC3004A4E9E /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +59,13 @@
 			isa = PBXGroup;
 			children = (
 				A66BF3CE1E4333C5004A4E9E /* AppDelegate.swift */,
-				A66BF3D01E4333C5004A4E9E /* ViewController.swift */,
 				A66BF3D21E4333C5004A4E9E /* Main.storyboard */,
 				A66BF3D51E4333C5004A4E9E /* Assets.xcassets */,
 				A66BF3D71E4333C5004A4E9E /* LaunchScreen.storyboard */,
 				A66BF3DA1E4333C5004A4E9E /* Info.plist */,
+				A66BF3E01E4333FC004A4E9E /* MaterialColor.swift */,
+				A66BF3E21E43344A004A4E9E /* UIColor+.swift */,
+				A66BF3E41E433EC3004A4E9E /* TableViewController.swift */,
 			);
 			path = MaterialColor;
 			sourceTree = "<group>";
@@ -137,8 +143,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A66BF3D11E4333C5004A4E9E /* ViewController.swift in Sources */,
+				A66BF3E11E4333FC004A4E9E /* MaterialColor.swift in Sources */,
+				A66BF3E31E43344A004A4E9E /* UIColor+.swift in Sources */,
 				A66BF3CF1E4333C5004A4E9E /* AppDelegate.swift in Sources */,
+				A66BF3E51E433EC3004A4E9E /* TableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +271,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = RS93W547X8;
 				INFOPLIST_FILE = MaterialColor/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zzheads.MaterialColor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -276,6 +285,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = RS93W547X8;
 				INFOPLIST_FILE = MaterialColor/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zzheads.MaterialColor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
