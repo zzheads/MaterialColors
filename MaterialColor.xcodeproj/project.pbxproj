@@ -71,6 +71,7 @@
 		A66BF40C1E43B657004A4E9E /* icon_152.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_152.png; path = MaterialColor/Resources/icon_152.png; sourceTree = "<group>"; };
 		A66BF40D1E43B657004A4E9E /* icon_167.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_167.png; path = MaterialColor/Resources/icon_167.png; sourceTree = "<group>"; };
 		A66BF4151E43B7F6004A4E9E /* README.MD */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.MD; sourceTree = "<group>"; };
+		A66BF4161E43BDCF004A4E9E /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +88,7 @@
 		A66BF3C21E4333C5004A4E9E = {
 			isa = PBXGroup;
 			children = (
+				A66BF4161E43BDCF004A4E9E /* LICENSE */,
 				A66BF4151E43B7F6004A4E9E /* README.MD */,
 				A66BF3CD1E4333C5004A4E9E /* MaterialColor */,
 				A66BF3CC1E4333C5004A4E9E /* Products */,
