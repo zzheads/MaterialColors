@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A6124C541E447F5C00436177 /* EditColorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6124C531E447F5C00436177 /* EditColorController.swift */; };
+		A6124C561E44A10A00436177 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6124C551E44A10A00436177 /* Color.swift */; };
 		A66BF3CF1E4333C5004A4E9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66BF3CE1E4333C5004A4E9E /* AppDelegate.swift */; };
 		A66BF3D41E4333C5004A4E9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A66BF3D21E4333C5004A4E9E /* Main.storyboard */; };
 		A66BF3D61E4333C5004A4E9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A66BF3D51E4333C5004A4E9E /* Assets.xcassets */; };
@@ -48,6 +50,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A6124C531E447F5C00436177 /* EditColorController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditColorController.swift; sourceTree = "<group>"; };
+		A6124C551E44A10A00436177 /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		A66BF3CB1E4333C5004A4E9E /* MatColor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MatColor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A66BF3CE1E4333C5004A4E9E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A66BF3D31E4333C5004A4E9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -56,7 +60,7 @@
 		A66BF3DA1E4333C5004A4E9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A66BF3E01E4333FC004A4E9E /* MaterialColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialColor.swift; sourceTree = "<group>"; };
 		A66BF3E21E43344A004A4E9E /* UIColor+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
-		A66BF3E41E433EC3004A4E9E /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		A66BF3E41E433EC3004A4E9E /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TableViewController.swift; path = MaterialColor/TableViewController.swift; sourceTree = "<group>"; };
 		A66BF3E71E43AEFA004A4E9E /* SanFranciscoDisplay-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SanFranciscoDisplay-Black.otf"; path = "MaterialColor/Resources/SanFranciscoDisplay-Black.otf"; sourceTree = "<group>"; };
 		A66BF3E81E43AEFA004A4E9E /* SanFranciscoDisplay-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SanFranciscoDisplay-Bold.otf"; path = "MaterialColor/Resources/SanFranciscoDisplay-Bold.otf"; sourceTree = "<group>"; };
 		A66BF3E91E43AEFA004A4E9E /* SanFranciscoDisplay-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SanFranciscoDisplay-Heavy.otf"; path = "MaterialColor/Resources/SanFranciscoDisplay-Heavy.otf"; sourceTree = "<group>"; };
@@ -103,6 +107,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A6124C501E447EE200436177 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A66BF3E41E433EC3004A4E9E /* TableViewController.swift */,
+				A6124C531E447F5C00436177 /* EditColorController.swift */,
+			);
+			name = Controllers;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		A6124C511E447F0900436177 /* Support files */ = {
+			isa = PBXGroup;
+			children = (
+				A66BF3DA1E4333C5004A4E9E /* Info.plist */,
+				A66BF3D21E4333C5004A4E9E /* Main.storyboard */,
+				A66BF3D51E4333C5004A4E9E /* Assets.xcassets */,
+				A66BF3D71E4333C5004A4E9E /* LaunchScreen.storyboard */,
+				A66BF3CE1E4333C5004A4E9E /* AppDelegate.swift */,
+			);
+			name = "Support files";
+			sourceTree = "<group>";
+		};
+		A6124C521E447F3100436177 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A66BF3E01E4333FC004A4E9E /* MaterialColor.swift */,
+				A66BF3E21E43344A004A4E9E /* UIColor+.swift */,
+				A6124C551E44A10A00436177 /* Color.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		A66BF3C21E4333C5004A4E9E = {
 			isa = PBXGroup;
 			children = (
@@ -110,7 +146,6 @@
 				A66BF4151E43B7F6004A4E9E /* README.MD */,
 				A66BF3CD1E4333C5004A4E9E /* MatColor */,
 				A66BF3CC1E4333C5004A4E9E /* Products */,
-				A66BF3E61E43AEE2004A4E9E /* Resources */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,14 +160,10 @@
 		A66BF3CD1E4333C5004A4E9E /* MatColor */ = {
 			isa = PBXGroup;
 			children = (
-				A66BF3CE1E4333C5004A4E9E /* AppDelegate.swift */,
-				A66BF3D21E4333C5004A4E9E /* Main.storyboard */,
-				A66BF3D51E4333C5004A4E9E /* Assets.xcassets */,
-				A66BF3D71E4333C5004A4E9E /* LaunchScreen.storyboard */,
-				A66BF3DA1E4333C5004A4E9E /* Info.plist */,
-				A66BF3E01E4333FC004A4E9E /* MaterialColor.swift */,
-				A66BF3E21E43344A004A4E9E /* UIColor+.swift */,
-				A66BF3E41E433EC3004A4E9E /* TableViewController.swift */,
+				A6124C521E447F3100436177 /* Model */,
+				A6124C501E447EE200436177 /* Controllers */,
+				A6124C511E447F0900436177 /* Support files */,
+				A66BF3E61E43AEE2004A4E9E /* Resources */,
 			);
 			name = MatColor;
 			path = MaterialColor;
@@ -174,6 +205,7 @@
 				A66BF3EF1E43AEFA004A4E9E /* SanFranciscoDisplay-Ultralight.otf */,
 			);
 			name = Resources;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -281,9 +313,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A66BF3E11E4333FC004A4E9E /* MaterialColor.swift in Sources */,
+				A6124C541E447F5C00436177 /* EditColorController.swift in Sources */,
 				A66BF3E31E43344A004A4E9E /* UIColor+.swift in Sources */,
 				A66BF3CF1E4333C5004A4E9E /* AppDelegate.swift in Sources */,
 				A66BF3E51E433EC3004A4E9E /* TableViewController.swift in Sources */,
+				A6124C561E44A10A00436177 /* Color.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -449,6 +483,7 @@
 				A66BF3DF1E4333C5004A4E9E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

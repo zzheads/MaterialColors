@@ -12,7 +12,9 @@ import UIKit
 
 class TableViewController: UITableViewController {
     let cellReuseIdentifier = "TableViewCell"
-    let colorTitles = MaterialColor.rawValues
+    let segueToEditColor = "segueToEditColor"
+    
+    var colors = [Color](titles: MaterialColor.rawValues)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,20 +29,16 @@ class TableViewController: UITableViewController {
 }
 
 extension TableViewController {
-    fileprivate func object(at indexPath: IndexPath) -> MaterialColor {
-        let colorTitle = colorTitles[indexPath.section]
-        let colorTones = MaterialColor.allTones(of: colorTitle)
-        return colorTones[indexPath.row]
+    fileprivate func object(at indexPath: IndexPath) -> Tone {
+        return colors[indexPath.section].tones[indexPath.row]
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
-        return colorTitles.count
+        return colors.count
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        let colorTitle = colorTitles[section]
-        let colorTones = MaterialColor.allTones(of: colorTitle)
-        return colorTones.count
+        return colors[section].tones.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -48,7 +46,7 @@ extension TableViewController {
         let color = object(at: indexPath)
         cell.backgroundColor = color.color
         cell.textLabel?.font = UIFont(name: "SanFranciscoDisplay-Medium", size: 14.0)
-        cell.textLabel?.text = "\(color.colorName): #\(color.hexValue)"
+        cell.textLabel?.text = "\(color.name): #\(color.hexValue)"
         if (color.isLight) {
             cell.textLabel?.textColor = .black
         } else {
@@ -58,14 +56,12 @@ extension TableViewController {
     }
     
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        let colorTitle = colorTitles[section]
-        let countTones = MaterialColor.allTones(of: colorTitle).count
-        return "\(colorTitle.uppercased())(\(countTones) tone(s)):"
+        return "\(colors[section].title.uppercased())(\(colors[section].tones.count) tone(s)):"
     }
     
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let colorTitle = colorTitles[section]
-        let countTones = MaterialColor.allTones(of: colorTitle).count
+        let colorTitle = colors[section].title
+        let countTones = colors[section].tones.count
         let header = UILabel()
         header.font = UIFont(name: "SanFranciscoDisplay-Bold", size: 15.0)
         header.backgroundColor = .darkGray
@@ -74,8 +70,43 @@ extension TableViewController {
         header.text = "\(colorTitle.uppercased()) (\(countTones)):"
         return header
     }
-    
-    override var prefersStatusBarHidden: Bool {
-        return true
+        
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard
+            let segueId = segue.identifier,
+            let indexPath = tableView.indexPathForSelectedRow
+            else {
+            return
+        }
+        switch segueId {
+        case segueToEditColor:
+            let editColorController = segue.destination as! EditColorController
+            let tone = object(at: indexPath)
+            let completionOnSave = { (tone: Tone) in
+                self.colors[indexPath.section].tones[indexPath.row] = tone
+                self.tableView.reloadRows(at: [indexPath], with: UITableViewRowAnimation.bottom)
+            }
+            editColorController.tone = tone
+            editColorController.completionOnSave = completionOnSave
+        default:
+            break
+        }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
